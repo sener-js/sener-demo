@@ -1,0 +1,9 @@
+{
+    "name": "sener-demo",
+    "dependencies": {
+      "sener": "latest"
+    },
+    "scripts": {
+      "start": "node index.js"
+    }
+}
