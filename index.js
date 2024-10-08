@@ -10,7 +10,7 @@ const router = new Router({
         return responseHtml('<div>Hello Sener! <a href="/data">(data)</a></div>');
     },
     '/data': () => {
-        return {data: 'Hello Sener!'}
+        return { data: { msg: 'Hello Sener!' } };
     },
 });
 
