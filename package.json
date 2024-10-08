@@ -1,5 +1,6 @@
 {
     "name": "sener-demo",
+    "type": "module",
     "dependencies": {
       "sener": "latest"
     },
