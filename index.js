@@ -7,14 +7,13 @@ import { Sener, Router } from 'sener';
 
 const router = new Router({
     '/': ({ responseHtml }) => {
-        return responseHtml('<div>Hello Sener! <a href="/data">(data)</a></div>');
+        return responseHtml('<div>Hello Sener! <a href="/data?a=1&b=2">(/data)</a></div>');
     },
-    '/data': () => {
-        return { data: { msg: 'Hello Sener!' } };
+    '/data': ({ query }) => {
+        return { data: { msg: 'Hello Sener!', query } };
     },
 });
 
 new Sener({
-    port: 9000,
     middlewares: [router],
 });
